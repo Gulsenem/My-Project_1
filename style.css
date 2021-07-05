@@ -1,0 +1,75 @@
+*{box-sizing: border-box;}
+body
+{
+    margin:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*****************HEADER*******************/
+header
+{
+
+}
+header .kontakt_daten
+{
+    height: 35px;
+    color:white;
+    background-color: rgb(1, 1, 97);
+    font-size: 0.8em;
+   
+    
+    display: flex;
+    align-items: center;
+
+}
+header .kontakt_daten div
+{
+    width: 1024px;
+    margin: 0 auto;
+    text-align: end;
+    opacity: 0.8;
+}
+header .kontakt_daten b
+{
+    font-weight: normal;
+    margin-left: 20px;
+}
+header .kontakt_daten span:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    max-width:1024px;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+header #logo img
+{
+    width: 200px;
+}
+nav #links a
+{
+    margin-left: 100px;
+    color:rgb(1, 1, 97);
+    text-decoration: none;
+   
+}
+nav #links a:hover
+{
+    color:rgb(165, 1, 1);
+    border-bottom: 2px solid rgb(165, 1, 1);
+}
+
+/*****************MAIN*******************/
+
+.slider .slider_images img
+{
+    
+    height: 800px;
+}
