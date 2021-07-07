@@ -8,9 +8,13 @@ body
 :root
 {
     --primary: #010161;
-    --secondary: #dee8ec; 
+    --secondary: #eff5f8; 
     --accent: #c50606; 
 }
+section
+{    }
+
+h1   { margin:0;}
 /*****************HEADER*******************/
 
 header .kontakt_daten
@@ -58,52 +62,50 @@ header .kontakt_daten span:hover
 }
 header #logo img
 {
-    width: 200px;
+    width: 230px;
+    padding-top: 5px;
 }
 nav{border-bottom: 1px solid var(--primary);}
 nav #links a
 {
-    margin-left: 50px;
-    color:var(--accent);
+    margin-left: 30px;
+    color:var(--primary);
     text-decoration: none;
     font-weight: bold;
 }
 nav #links a:hover
 {
-    color: var(--primary);
-    border-bottom: 2px solid var(--primary);
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
 }
 
 /*****************MAIN*******************/
 
 .slider
 {
-    height: 500px;
-    border-bottom: 1px solid var(--primary);
+    padding:0;
+    height: 550px;
 }
 .slider #slider_images 
 {
-    background-image: url('guitar.jpg');
+    background-image: url('audio.jpg');
     width:100%;
     height: 100%;
     background-size: cover;
-    background-position: center;
-    
+    background-position: center;  
 }
 
 
 .leistungen
 {
-    color: var(--primary);
     text-align: center;
-    padding: 80px 0;  
-    border-bottom: 1px solid var(--primary);
 }
 
 .leistung_container
 {
     display :flex;
     justify-content: center;
+    margin: 80px 0;
 }
 .container
 {
@@ -114,19 +116,15 @@ nav #links a:hover
 .container_icon
 {
     box-shadow: 0px 0px 12px 0px #000000;
-    padding: 15px;
+    padding: 25px;
     border-radius:50%;
-    color:var(--primary);
-    font-size: 3em;
-    width: 85px;
-    height: 85px;
+    width: 100px;
+    height: 100px;
     margin: 0 auto;
-    
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: var(--primary);
 }
+.container_icon img
+{width:100%; filter: invert(1);}
 .container span
 {
     color:#474747;
@@ -138,17 +136,11 @@ nav #links a:hover
 }
 .team
 {
-
     padding: 80px 0;
     max-width: 900px;
     margin: 0 auto;
 }
-.team h1
-{
-    margin:0;
-    color:var(--primary);
 
-}
 .grup_team
 {
     display: flex;
@@ -209,4 +201,50 @@ nav #links a:hover
 {
      background-color:  #d12222;
 }
-   
+
+.uberUns
+{
+    max-width: 900px;
+    margin: 80px auto;
+}
+
+
+.uberUns_box
+{
+    display: flex;
+    height: 350px;
+    margin-top: 30px;
+
+    position: relative;
+}
+.uberUns_box img
+{
+    width: 200px;
+    position:absolute;
+    bottom:-40px;
+    right: 60px;
+}
+.uberUns_text
+{
+    width: 700px;
+    padding: 50px;
+    color: #474747;
+    box-shadow: 0px 0px 12px 0px #000000;
+    overflow: hidden;
+}
+.blau_text
+{
+    background-color: var(--primary);
+    color:white;
+    text-align: center;
+    font-size: 2em;
+    padding: 50px 0;
+}
+/****************Footer*****************/
+footer
+{
+    background-color: var(--primary);
+    text-align: center;
+    color:white;
+    padding: 10px 0;
+}
