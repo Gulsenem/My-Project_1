@@ -14,7 +14,7 @@ body
 section
 {    }
 
-h1   { margin:0;}
+h1, h4   { margin:0; color: var(--primary);}
 /*****************HEADER*******************/
 
 header .kontakt_daten
@@ -32,7 +32,7 @@ header .kontakt_daten
 }
 header .kontakt_daten div
 {
-    width: 900px;
+    width: 1000px;
     margin: 0 auto;
     text-align: end;
     opacity: 0.8;
@@ -55,7 +55,7 @@ header .kontakt_daten span:hover
     justify-content: space-between;
 
 
-    max-width:900px;
+    max-width:1000px;
     margin: 0 auto;
     font-size: 1.2em;
      
@@ -85,6 +85,7 @@ nav #links a:hover
 {
     padding:0;
     height: 550px;
+    position:relative;
 }
 .slider #slider_images 
 {
@@ -95,36 +96,109 @@ nav #links a:hover
     background-position: center;  
 }
 
+#slider_text
+{
+    position:absolute;
+    top:0;
+    left:0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 3.5em;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+#slider_btn
+{
+    position: absolute;
+    top:40%;
+    left:0;
+
+
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    padding: 0 30px;
+}
+#slider_btn button
+{
+    cursor: pointer;
+    outline: none;
+    border:none;
+    font-size: 3.5em;
+    color:var(--secondary);
+    background-color: inherit;
+
+}
+.slider_kreis
+{
+    display:flex;
+    position: absolute;
+    bottom: 30px;
+    left: 45%;
+
+}
+.slider_kreis div
+{
+    width:25px;
+    height: 7px;
+    border:1px solid white;
+    border-radius: 5px;
+    margin: 0 5px;
+}
 
 .leistungen
 {
     text-align: center;
+    position: relative;
+}
+.leistung_text
+{
+    background-color: var(--secondary);
+    padding: 70px 0 100px 0;
 }
 
 .leistung_container
 {
     display :flex;
     justify-content: center;
-    margin: 80px 0;
+    margin: 80px 0 0 0;
+
+    position: relative;
+    top: -120px;
 }
 .container
 {
-    width: 250px;
+    width: 220px;
     padding:10px 20px 15px 20px;
     border-radius: 10px;
+    box-shadow: 0px 0px 12px 0px #000000;
+    margin: 0 10px;
+
 }
 .container_icon
 {
-    box-shadow: 0px 0px 12px 0px #000000;
+    
     padding: 25px;
     border-radius:50%;
     width: 100px;
     height: 100px;
     margin: 0 auto;
-    background-color: var(--primary);
+    background-color: var(--secondary);
+    margin-bottom: 20px;
+}
+.container p
+{
+    margin: 10px auto;
+    width: 50px;
+    height: 3px;
+    background-color: var(--accent);
 }
 .container_icon img
-{width:100%; filter: invert(1);}
+{width:100%; }
 .container span
 {
     color:#474747;
