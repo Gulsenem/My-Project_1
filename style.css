@@ -11,10 +11,19 @@ body
     --secondary: #eff5f8; 
     --accent: #c50606; 
 }
-section
-{    }
+h1
+{
+    background-color: var(--secondary);
+    padding: 50px 0;
+    margin:0; color: 
+    var(--primary);
+}
 
-h1, h4   { margin:0; color: var(--primary);}
+h4   
+{ 
+    margin:0; 
+    color: var(--primary);
+}
 /*****************HEADER*******************/
 
 header .kontakt_daten
@@ -155,9 +164,8 @@ nav #links a:hover
     text-align: center;
     position: relative;
 }
-.leistung_text
+.leistungen h1
 {
-    background-color: var(--secondary);
     padding: 70px 0 100px 0;
 }
 
@@ -206,46 +214,45 @@ nav #links a:hover
 }
 .unser_team
 {
-    background-color: var(--secondary);
-}
-.team
-{
-    padding: 80px 0;
-    max-width: 900px;
     margin: 0 auto;
+    text-align: center;
 }
+
 
 .grup_team
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 70px 0;
 }
 .team_menschen
 {
-    border: 1px solid var(--primary);
-    width: 250px;
-    margin-top: 30px;
-    border-radius: 8px;
-    transition: transform 0.5s;
-}
-.team_menschen:hover
-{
-    transform: scale(1.1);
-    box-shadow: 0px 0px 12px 0px #000000;
+    width: 230px;
+    margin:0 30px;
 }
 
-.team_menschen img
+.team_img
+{
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+    border: 1px solid var(--primary);
+    padding: 10px;
+    cursor:pointer;
+}
+
+
+.team_img img
 {
     width:100%;
-    height: 200px;
-    border-radius: 8px 8px 0 0;
-    border-bottom: 1px solid var(--primary);
+    height: 100%;
+    border-radius: 50%;
 }
 .team_text
 {
     display: flex;
     flex-direction: column; 
-    padding: 30px 20px;
+    padding-top: 30px;
 }
 .team_text>*
 {
@@ -259,61 +266,40 @@ nav #links a:hover
     color:var(--primary); 
 }
 .team_text small
-{color:#474747;}
-.team_text button
-{
-    background-color: var(--accent);
-    padding: 8px 12px;
-    cursor: pointer;
-    outline: none;
-    border:none;
-    font-weight: bold;
-    color:white;
-    border-radius:8px;
-}
-.team_text button:hover
-{
-     background-color:  #d12222;
-}
+{color: var(--accent);}
+
 
 .uberUns
 {
-    max-width: 900px;
-    margin: 80px auto;
+    text-align: center;
 }
 
 
-.uberUns_box
-{
-    display: flex;
-    height: 350px;
-    margin-top: 30px;
-
-    position: relative;
-}
-.uberUns_box img
-{
-    width: 200px;
-    position:absolute;
-    bottom:-40px;
-    right: 60px;
-}
 .uberUns_text
 {
-    width: 700px;
+    width: 800px;
     padding: 50px;
     color: #474747;
-    box-shadow: 0px 0px 12px 0px #000000;
-    overflow: hidden;
+    margin: 0 auto;
 }
-.blau_text
+.uberUns button
+{
+    background-color: var(--accent);
+    outline:none;
+    border:none;
+    border-radius: 8px;
+    cursor: pointer;
+    color:white;
+    padding: 6px 12px;
+}
+/*.blau_text
 {
     background-color: var(--primary);
     color:white;
     text-align: center;
     font-size: 2em;
     padding: 50px 0;
-}
+}*/
 /****************Footer*****************/
 footer
 {
