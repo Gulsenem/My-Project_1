@@ -35,13 +35,21 @@
     <main>
 
         <section class="slider">
-            <div id="slider_images"></div>
-            <div id="slider_text">
-                <span>Herzlich Wilkommen</span>
-            </div>
+            
+                <div id="slider_img1"></div>
+                <div id="slider_img2"></div>
+                <div id="slider_img3"></div>
+
+                <div id="overlay"></div>
+            
+           
+                <span id="slider_text1">Herzlich Wilkommen!</span>
+                <span id="slider_text2">Wir machen Musik</span>
+                <span id="slider_text3">Musik ist das Leben!</span>
+            
             <div id="slider_btn">
-                <button><i class="fas fa-angle-left"></i></button>
-                <button><i class="fas fa-angle-right"></i></button>
+                <button onclick="moved(-1)" ><i  class="fas fa-angle-left"></i></button>
+                <button onclick="moved(1)" ><i  class="fas fa-angle-right"></i></button>
             </div>
             <div class="slider_kreis">
                 <div></div><div></div><div></div>
@@ -131,14 +139,27 @@
                     </p>
                     <button>Mehr lesen</button>
                 </div>
-                <img src="vintage.jpg" alt="" >
+                
             </div>
         </section>
 
     </main>
     <footer>
-        <span>Ogulsenem Durdyyeva</span>
+
+        <div class="kontakt_daten">
+            <i class="far fa-phone-office"></i>  <span>0123 456 78 90</span> <br>
+            <img src="logo.jpg" alt="">
+            <i class="fas fa-at"></i> <span>mail@website.de</span>
+
+        </div>
+
+        <div class="footer2">
+            <small>Ogulsenem Durdyyeva</small>
+        </div>
+
     </footer>
     
+
+    <script src="script.js"></script>
 </body>
 </html>
