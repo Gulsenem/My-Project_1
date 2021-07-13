@@ -131,7 +131,7 @@ nav #links a:hover
     top:0;
     left:0;
 }
-#slider_text1
+#slider_text1, #slider_text2, #slider_text3
 {
     display: flex;
     justify-content: center;
@@ -145,6 +145,8 @@ nav #links a:hover
     left:30%;
     
 }
+#slider_text2, #slider_text3
+{opacity:0;}
 #slider_btn
 {
     position: absolute;
@@ -178,17 +180,16 @@ nav #links a:hover
     bottom: 30px;
     left: 45%;
 
-    z-index: 1;
-
 }
 .slider_kreis div
 {
     width:25px;
     height: 7px;
-    border:1px solid white;
+    border:1px solid var(--secondary);
     border-radius: 5px;
     margin: 0 5px;
 }
+
 
 .leistungen
 {
