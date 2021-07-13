@@ -85,7 +85,14 @@ nav #links a:hover
     color: var(--accent);
     border-bottom: 2px solid var(--accent);
 }
-
+nav #hamburger 
+{
+    color:var(--primary);
+    font-size: 1.5em;
+    cursor:pointer;
+    display: none;
+}
+#hamburger :hover {color:var(--accent)}
 /*****************MAIN*******************/
 
 .slider
@@ -363,4 +370,73 @@ footer .kontakt_daten i
     color:white;
     padding: 10px 0;
     border-top: 1px solid var(--secondary);
+}
+
+
+
+@media (max-width:320px) 
+{
+    
+}
+
+@media (max-width: 760px) 
+{
+    nav
+    { 
+        width: 700px;
+    }
+    nav #links
+    {
+        display:none;
+    }
+    nav #hamburger
+    {
+        display: flex;
+    }
+    #slider_text1, #slider_text2, #slider_text3
+    {
+        font-size: 2.8em;
+        left: 24%;
+    }
+    .leistung_container
+    {
+        width: 700px;
+    }
+    .container
+    {
+        width: 200px;
+        font-size: 0.9em;
+    }
+
+    .grup_team
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .team_menschen 
+    {
+        display: flex;
+        margin-bottom: 25px;
+        width: 450px;
+    }
+    .team_text
+    {
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1.2em;
+    }
+    .uberUns_text
+    {
+        width: 700px;
+    }
+    footer .kontakt_daten img
+    {
+        width: 150px;
+    }
+    footer .kontakt_daten
+    {
+        font-size: 0.9em;
+    }
 }

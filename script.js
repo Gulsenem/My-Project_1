@@ -111,24 +111,25 @@ function showSlide3 ()
     kreis[0].style.borderColor = "#eff5f8";
 
 }
-
-function kreis_klik()
-    
+//her html elemente onclick function gurnayas
+for(let i=0; i<kreis.length; i++)
 {
-        if(kreis[0])
-        {
-            alert("kreis[0]");
-            showSlide1();
-        }
-        else if (kreis[1])
-        {
-            showSlide2();
-            alert("kreis[1]");
-        }
-        else if (kreis[2])
-        {
-            showSlide3();
-            alert("kreis[]");
-        }
-    
+    kreis[i].setAttribute("onclick", "kreis_kliked("+i+");");
+}
+
+//her html elementi basanda islemeli functioni yazyas
+function kreis_kliked(i)
+{
+    if(i==0)
+    {
+        showSlide1();
+    }
+    else if (i==1)
+    {
+        showSlide2();
+    }
+    else if (i==2)
+    {
+        showSlide3();
+    }
 }
