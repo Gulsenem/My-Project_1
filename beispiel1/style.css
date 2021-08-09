@@ -27,6 +27,9 @@ h1
     margin:0;
     margin-bottom: 70px;
 }
+
+
+section{box-shadow: 0px 10px 10px -8px rgba(150, 150, 150, 0.91);}
 /*==================Header===============*/
 
 .slider
@@ -34,6 +37,7 @@ h1
     
     height: 650px;
     position:relative;
+    box-shadow: 0px 10px 10px -8px rgba(150, 150, 150, 0.91);
 }
 .slider #slider_img1, #slider_img2, #slider_img3
 { 
@@ -187,6 +191,7 @@ header #logo img
 nav
 {
     background-color:var(--secondary);
+    box-shadow: 0px 10px 10px -8px rgba(150, 150, 150, 0.91);
 }
 nav #links a
 {
@@ -213,8 +218,6 @@ nav #hamburger
 {
     display :flex;
     justify-content: space-between;
-
-
 }
 .container
 {
@@ -228,21 +231,27 @@ nav #hamburger
     height: 150px;
     margin: 0 auto;
     border-radius:50%;    
-    border-bottom: 5px solid var(--accent);
-    border-left: 5px solid var(--accent);
+    border-bottom: 7px solid var(--accent);
+    border-left: 7px solid var(--accent);
 }
 .container_icon>div
 {
     
     border-radius:50%;
     padding: 25px;
-    border-top: 5px solid var(--primary);
-    border-right: 5px solid var(--primary);
+    border-top: 7px solid var(--primary);
+    border-right: 7px solid var(--primary);
     margin-bottom: 20px;
+}
+.container h4
+{
+    margin-bottom:0;
 }
 .container p
 {
-    margin: 10px auto;
+    
+    margin:10px auto;
+    
     width: 50px;
     height: 3px;
     background-color: var(--accent);
@@ -253,11 +262,6 @@ nav #hamburger
 {
     color:#474747;
     font-size: 0.9em;
-}
-
-.unser_team
-{
-    background-color: var(--secondary);
 }
 
 .grup_team
@@ -338,6 +342,72 @@ nav #hamburger
     color: #474747;
     text-align: left;
 }
+.kontaktformular>.wrapper
+{
+    position: relative;
+}
+.information 
+{
+    background-color: var(--secondary);
+    padding: 25px 50px;
+    text-align: left;
+    color:var(--primary);
+
+}
+.information div
+{
+    margin-bottom: 30px;
+}
+.information div i
+{
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.information div p
+{
+    margin-left: 30px;
+    margin-top: 3px;
+}
+
+.formular
+{
+    width: 400px;
+    padding: 20px 50px;
+    background-color:var(--secondary);
+    box-shadow: 0px 0px 12px 0px #000000;
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:170px;
+    right:50px;
+}
+.formular>*
+{
+    margin-bottom: 15px;
+    padding: 8px 12px;
+    outline: none;
+    border:none;
+    background-color: inherit;
+    
+}
+.formular input
+{
+   border-bottom: 1px solid var(--primary); 
+}
+.formular textarea
+{
+    border: 1px solid #ccc;
+}
+.formular button
+{
+    background-color: var(--accent);
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 
 /*===========Footer==========*/
 footer
